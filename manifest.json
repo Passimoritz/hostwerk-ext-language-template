@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Passimoritz/hostwerk-public/main/sdk/manifest.schema.json",
+  "id": "language-template",
+  "name": {
+    "de": "Sprachpaket-Vorlage",
+    "en": "Language pack template"
+  },
+  "description": {
+    "de": "Vorlage für ein Sprachpaket: Hostwerk selbst pflegt Deutsch und Englisch, jede weitere Sprache kommt als Erweiterung aus der Community. Mit Skript für fehlende Texte, Abdeckung in Prozent und Prüfung der Platzhalter.",
+    "en": "Template for a language pack: Hostwerk itself keeps German and English, every other language comes as an extension from the community. With a script for missing texts, coverage in percent and a check of the placeholders."
+  },
+  "version": "1.0.0",
+  "author": "Hostwerk",
+  "homepage": "https://github.com/Passimoritz/hostwerk-ext-language-template",
+  "license": "MIT",
+  "icon": "icon.svg",
+  "banner": "banner.svg",
+  "color": "#8b5cf6",
+  "category": "other",
+  "hostwerk": ">=2.10.0",
+  "permissions": [],
+  "languages": [
+    {
+      "id": "xx",
+      "name": "Example language",
+      "file": "lang/xx.json"
+    }
+  ]
+}
