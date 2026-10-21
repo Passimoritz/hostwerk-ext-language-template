@@ -2,3 +2,5 @@
 *.zip.sha256
 node_modules/
 *.todo.json
+lang/qps.json
+badge/

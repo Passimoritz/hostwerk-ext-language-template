@@ -1,0 +1,35 @@
+name: Coverage badge
+
+# Counts how much of Hostwerk's current texts this pack translates and publishes a shields.io endpoint file on the
+# branch "badge" – the badge in the README reads it. Runs on every push to main and every Monday (Hostwerk adds texts).
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  badge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+      - name: Coverage
+        run: |
+          mkdir -p "$RUNNER_TEMP/badge"
+          node scripts/update.js --badge "$RUNNER_TEMP/badge/coverage.json" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Publish on branch "badge"
+        run: |
+          cd "$RUNNER_TEMP/badge"
+          git init -q -b badge
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add coverage.json
+          git commit -q -m "Coverage $(node -p "require('./coverage.json').message")"
+          git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" badge

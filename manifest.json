@@ -9,7 +9,7 @@
     "de": "Vorlage für ein Sprachpaket: Hostwerk selbst pflegt Deutsch und Englisch, jede weitere Sprache kommt als Erweiterung aus der Community. Mit Skript für fehlende Texte, Abdeckung in Prozent und Prüfung der Platzhalter.",
     "en": "Template for a language pack: Hostwerk itself keeps German and English, every other language comes as an extension from the community. With a script for missing texts, coverage in percent and a check of the placeholders."
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Hostwerk",
   "homepage": "https://github.com/Passimoritz/hostwerk-ext-language-template",
   "license": "MIT",
