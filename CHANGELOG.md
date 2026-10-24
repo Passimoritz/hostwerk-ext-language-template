@@ -1,3 +1,7 @@
+## 1.1.1
+
+- New animated icon and banner in the common Hostwerk style (isometric block). / Neues animiertes Symbol und Banner im gemeinsamen Hostwerk-Stil (isometrischer Block).
+
 ## 1.1.0
 
 - Release package now contains `lang/` (before it would have been empty) – everything except the repository tooling. / Release-Paket enthält jetzt `lang/` (vorher wäre es leer gewesen) – alles außer dem Repo-Werkzeug.
