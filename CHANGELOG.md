@@ -1,3 +1,7 @@
+## 1.1.2
+
+- States the SDK it is written for ("sdkVersion": "3.0") and passes the new embedding check (traffic light in Extensions → Details → Embedding) without notes. / Nennt das SDK, für das sie geschrieben ist („sdkVersion“: „3.0“), und besteht die neue Einbettungs-Prüfung (Ampel unter Erweiterungen → Details → Einbettung) ohne Hinweise.
+
 ## 1.1.1
 
 - New animated icon and banner in the common Hostwerk style (isometric block). / Neues animiertes Symbol und Banner im gemeinsamen Hostwerk-Stil (isometrischer Block).
